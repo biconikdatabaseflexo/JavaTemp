@@ -1,0 +1,42 @@
+INSTALACION DE phpMyAdmin: (los pasos son del video https://www.youtube.com/watch?v=7pUtRnM0IvU&t)
+1-Ir al siguiente enlace y descargar el programa haciendo click en DOWNLOAD.
+	https://www.appserv.org/en/download/
+2-Esperar unos segundos para que inicia la descarga.
+3-En caso que el antivirus interfiera, ir alantivirus y desactivar el cortafuegos.
+4-Luego ejecutar el instalador
+5-Presionar todo NEXT hasta que llegues a la pagina en donde te pide el nombre del SERVER y ADMINISTRATOR'EMAIL. 
+  En esta pagina verificar que el SERVER NAME sea localhost
+  En ADMINISTRATOR'S EMAIL puedes colocar tu correo electronico.
+6-Luego presionas NEXT y en ventana de ENTER ROOT PASSWORD hacer lo siguiente:
+  En la casilla ENTER ROOT PASSWORD colocar 123456789
+  En la casilla RE-ENTER ROOT PASSWORD colocar 123456789
+7-Hacer click en INSTALAR y esperar
+8-Hacer click en FINISH con las opciones START APACHE y START MYSQL activas.
+9-Reiniciar el equipo
+10- Abrir el navegador que utilice y en la barra de direcciones escribir localhost
+11-Hacer clic en phpMyAdmin Dtabase Mnager Version 4.6.4
+12-Le aparecerá una ventana para loguearse en donde deberá ingrasar:
+   En USUARIO colocar root
+   En CONTRASEÑA colocar 123456789
+13-Hacer click en CONTINUAR
+
+IMPORTAR BASE DE DATOS: (los pasos son del video https://www.youtube.com/watch?v=9xGLP1HbmHM)
+1-Abrir PhpMyAdmin siguiendo los pasos 10 al 13 de la instruccion anterior.
+2-En el lado izquierdo, hacer click en NUEVA (figura de un cilindro con signo +)
+3-Solo llenar la casilla "Nombre da la base de datos" y colocar: contabilidad
+4-Hacer click en "Crear"
+5-En el lado izquierdo hacer click en el nombre de la base de datos recien creado "contabilidad"
+6-En el lado derecho, en la barra de menus buscar "Importar" y hacerle click
+7-En la seccion "Archivo a importar", hacer click en "Seleccionar archivo" y buscar el archivo contabilidad que se
+  encuentra en el comprimido.
+8-Hacer click en "abrir" y click en "Continuar"
+9-Con eso las tablas ya estarian ingresadas en la base de datos.
+
+FUNCIONAMIENTO DEL PROGRAMA
+1-Previamente debe estar seguro que posee instalado el Netbeans completo (pesa aprox. 221MB)
+2-Es posible que salga un error en el proyecto indicando que se perdió una libreria, entonces hacer click derecho
+  en el proyecto "encuesta" y seleccionar "Properties".
+3-En el lado derecho click en "Libraries"
+4-En el lado izquierdo click en el boton "Add JAR/Folder"
+5-Buscar el archivo "mysql-connector-java-5.1.35-bin.jar" que se encuentra en el comprimido y click en el boton ABRIR
+6-Luego click en OK

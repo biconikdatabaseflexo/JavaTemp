@@ -1,0 +1,29 @@
+El trabajo se dividirá en 3 modulos:
+*ventas: encargado Cesar
+*almacen: encargado Diego
+*reclamos/codificacion: encargado Raul
+
+VENTAS: ya lo hice
+
+ALMACEN: las funciones q se ocupa son las siguientes:
+	 -Llenar la tabla "ingresomercaderia" con la informacion de las facturas (el almacenero recibe la factura, luego se pone a buscar los codigos de cada producto en la BD y finalmente ingresa toda la informacion).
+		Nota 1: Todas las facturas que ingresas tienen estado "CONFORME"
+		Nota 2: Raul hará el modulo de codificacion de productos, tu vas a imaginar que los productos de la factura q recibes se encuentran registrados en la BD (siempre el operador hace la consulta por medio de la descripcion del producto Ej: %resiste% ,para buscar las resistencias, ver "VentanaProducto.java")
+	 -Actualizar el stock de la tabla "inventario" porque al registrar una factura, ingresan productos al almacen. Puedes usar de guia a "Operaciones.java".
+		Nota: usa pilas o colas para hacer este modulo y usa como referencia el modulo Ventas porque es parecido.
+
+Reclamos/codificacion: las funciones q se ocupa son las siguientes:
+	 -buscar por numero de TICKET para cambiar el ESTADO a ANULADO de la tabla "ventas".
+		Nota: usar como guia el metodo "cambiarDato" de "Operaciones.java".
+	 -debe permitir actualizar el STOCK de la BD "inventario" (dado que el ticket fue anulado, los productos retornan al stock).
+		Nota 1: el operador ingresa el numero del ticket y al presionar un boton, internamente cambia el estado a ANULADO de todas las filas que pertenecen al ticket en la BD y actualiza el stock.
+		Nota 2: es similar al metodo "mostrarTabla" de VentanaProducto, usando solo la parte de consulta y el recorrido que hace de la base de datos, solo que dentro del recorrido (while) pones un metodo similar a "cambiarDato" de "Operaciones.java"
+	 -buscar por numero de FACTURA para cambiar el ESTADO a ANULADO de la tabla "ingresomercaderia".
+		Nota: usar como guia el metodo "cambiarDato" de "Operaciones.java".
+	 -debe permitir actualizar el STOCK de la BD "inventario" (dado que la fue anulado, los productos salen del stock).
+		Nota 1: el operador ingresa el numero de la factura y al presionar un boton, internamente cambia el estado a ANULADO de todas las filas que pertenecen al ticket en la BD y actualiza el stock.
+		Nota 2: es similar al metodo "mostrarTabla" de VentanaProducto, usando solo la parte de consulta y el recorrido que hace de la base de datos, solo que dentro del recorrido (while) pones un metodo similar a "cambiarDato" de "Operaciones.java"
+	 -En el mismo modulo debe haber una seccion de CODIFICACION, en donde el usuario ingresa CODIGO, DESCRIPCION, MODELO, COSTO y PRECIO (el STOCK es 0 de forma automatica) y al presionar un boton, todo lo registra en la tabla "inventario".
+		Nota: usar como guia el metodo "insertarVenta" de "Operaciones.java"
+
+POSDATA: los modulos son independientes, usar la base de datos que les envio.
